@@ -1,6 +1,7 @@
 # To Do List
 A simple to do list in python
-
+### Note:
+You will need pandas and numpy to run this. You can install it using pip install pandas and pip install numpy
 ## How to use the To Do List
 
 #### Step 1: 
