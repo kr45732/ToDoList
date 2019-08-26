@@ -74,6 +74,9 @@ class ToDoList:
                 with open("current_events.txt", "w") as f:
                     f.write("Day Of Week,Start Time,Event Name,Status\n")
                 df.to_csv("current_events.txt", mode="a", index=False, header=False)
+            elif len(day_last_updated) < 5:
+                with open("last_updated.txt", "w") as f:
+                    f.write(str(my_date))
 
     def get_events(self, df):
         df = df[df["Day Of Week"] == self.current_day_of_week]
